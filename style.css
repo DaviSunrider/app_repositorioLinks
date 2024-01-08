@@ -27,6 +27,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -157,4 +158,14 @@ footer a {
 footer:hover a {
   color: #8234e9;
   font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .ligth {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
 }
